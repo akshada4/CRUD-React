@@ -1,4 +1,4 @@
-import { FETCH_POSTS, CREATE_POST, UPDATE_POST } from './types';
+import { FETCH_POSTS, CREATE_POST, UPDATE_POST, LIKED_POST, DISLIKED_POST } from './types';
 
 export const getPosts = () => {
 	return (dispatch) => {
@@ -42,5 +42,21 @@ export const updatePosts = (updatedPost) => {
 	  			type: UPDATE_POST,
 	  			data: post
 	  		}));
+	}
+}
+
+export const likePost = (post) => {
+	return (dispatch) => {
+		dispatch({
+			type: LIKED_POST,
+			data: post })
+	}
+}
+
+export const dislikePost = (post) => {
+	return (dispatch) => {
+		dispatch({
+			type: DISLIKED_POST,
+			data: post })
 	}
 }

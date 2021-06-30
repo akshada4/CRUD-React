@@ -21,7 +21,7 @@ div header div input {
   display: inline-block;
   position: absolute;
   border: 1px solid gray;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   right: 0rem;
 }
 
@@ -29,7 +29,7 @@ div header div input {
   display: inline-block;
   position: absolute;
   border: 1px solid grey;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
 }
 
 .btn {
@@ -46,11 +46,12 @@ div header div input {
 }
 
 #add-post {
-  border-radius: 1rem;
+  border-radius: 0.5rem;
 }
 
 #new-post-btn {
   right: 44rem;
+  border: 1px solid black;
 }
 
 .post {
@@ -96,8 +97,8 @@ div header div input {
 }
 
 #home {
-  float:right;
-  margin-right: 2rem;
+  position: absolute;
+  right: 44rem;
 }
 
 .create-post {
@@ -146,4 +147,13 @@ textarea:focus {
 
 .create-post form div:nth-child(3) {
     text-align: right;
+}
+
+.create-post-btn {
+  width: 16rem;
+  height: 4rem;
+  cursor: pointer;
+  font-size: 1.4rem;
+  border: 1px solid black;
+  border-radius:  0.5rem;
 }

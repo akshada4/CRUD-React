@@ -1,3 +1,5 @@
+import LikeDislikeButton from './LikeDislikeButton'
+
 const DisplayedPosts = ({ posts }) => {
 	return (
 		<div>
@@ -7,11 +9,7 @@ const DisplayedPosts = ({ posts }) => {
 						<h4>{post.title}</h4>
 						<p>{post.body}</p>
 					</div>
-					<div className="post-btn">
-						<button value={post.id} id="like">Like</button>
-						<button value={post.id} id="dislike">Dislike</button>
-						<button value={post.id} id="update">Update</button>
-					</div>
+					<LikeDislikeButton value={post.id} />
 				</div>
 			))}
 		</div>

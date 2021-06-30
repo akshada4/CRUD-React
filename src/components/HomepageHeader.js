@@ -1,15 +1,15 @@
 import { Link } from 'react-router-dom';
+import Search from './Search';
 
 const HomepageHeader = () => {
+
 	return (
 		<header>
-          <div className="search">
-            <input type="search" name="searched-post" id="search-input" />
-            <button className="btn" id="search-post">Search</button>
-          </div>
-          <Link to="/createpost" >
-            <div className="header-buttons" id="new-post-btn">
-              <button className="btn" id="add-post">New Post</button>
+          <Search />     
+          <Link to="/createpost">    
+            <div className="header-buttons" id="new-post-btn">          
+                  <button className="btn" 
+                          id="add-post">New Post</button>              
             </div>
           </Link>
         </header>
