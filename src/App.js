@@ -6,7 +6,7 @@ function App() {
   return (
     <Router>
       <div>
-        <Route path="/CRUD-React/" exact component={Posts} />
+        <Route path="/CRUD-React" exact component={Posts} />
         <Route path="/CRUD-React/createpost" component={CreatePost} />
       </div>
     </Router>
