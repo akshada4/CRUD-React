@@ -6,7 +6,7 @@ const HomepageHeader = () => {
 	return (
 		<header>
           <Search />     
-          <Link to="/createpost">    
+          <Link to="/CRUD-React/createpost">    
             <div className="header-buttons" id="new-post-btn">          
                   <button className="btn" 
                           id="add-post">New Post</button>              
