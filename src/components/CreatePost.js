@@ -21,7 +21,7 @@ const CreatePost = (props) => {
 	return (
 	<div>
 		<header>
-			<Link to="/">
+			<Link to="/CRUD-React">
 				<button className="create-post-btn" id="home">Home</button>	
 			</Link>
 			<Search />
